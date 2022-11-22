@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+figure{
+    width: 100px;
+    height: 50px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+/***************Header - Barre de navigation ******************/
+
+nav{
+    width:100%;
+    height:50px; 
+    position:relative;
+    background-color: #333;
+    z-index: 1;
+}
+
+.nav-menu{ 
+    width: 100%;
+    height:100%;
+    text-align: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{ 
+    display:inline-block;
+    line-height: 50px;
+    margin:0 10px; 
+    font-size:18px;
+}
+
+.nav-item.active{
+    display:block;
+}
+
+.nav-item a{ 
+    color:white;
+    font-size: 1.5rem;
+}
+
+.btn-toggle{ 
+    position:absolute;
+    width: 40px;
+    height:40px;
+    left:12px;
+    top:12px;
+    cursor:pointer;
+    display:none;
+}
+
+.btn-toggle i{ 
+    color:white;
+    position:absolute;
+    font-size:25px;
+}
+
+
+
+@media screen and (max-width:700px) {
+    .btn-toggle{ 
+        display:block;
+    }
+
+    figure{
+        display: none;
+    }
+
+    .nav-item{ 
+        display:block;
+        background-color: #333;
+        margin: 0; 
+    }
+
+    .nav-menu{
+        position:relative;
+        top:50px;
+        display:none; 
+    }
+
+    nav{
+        border-bottom:1px solid white;
+    }
+
+    .nav-menu.active{ 
+        display:block;
+    }
+
+    
+}
