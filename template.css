@@ -178,6 +178,7 @@ body {
 .content #explain-three .text a:hover,
 .content #explain-four .text a:hover {
     background-color: #b18733;
+    transition: background-color 0.2s;
 }
 
 .content #explain-one .image,
