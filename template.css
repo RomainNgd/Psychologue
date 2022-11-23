@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+}
+
+/******** CARD SECTION **********/
+
+.card h1 {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.card #card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px
+}
+
+.card #card-section #card-one,
+.card #card-section #card-two,
+.card #card-section #card-three,
+.card #card-section #card-four {
+    width: 259px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background: #046F9E;
+    color: white;
+}
+
+.card #card-section #card-one:hover,
+.card #card-section #card-two:hover,
+.card #card-section #card-three:hover,
+.card #card-section #card-four:hover {
+    background-color: #6ACDF9;
+    transition: background-color 0.2s;
+}
+
+.card #card-section #card-one p,
+.card #card-section #card-two p,
+.card #card-section #card-three p,
+.card #card-section #card-four p {
+    text-align: center;
+}
+
+.card .link-mobile {
+    text-align: center;
+    margin: 40px 0;
+    display: none;
+}
+
+.card a {
+    color: white;
+    padding: 10px;
+    background-color: #CC9933;
+    border-radius: 30px;
+}
+
+
+/*********** CONTENT SECTION *********/
+.content {
+    margin-top: 50px;
+}
+
+.content #explain-one,
+.content #explain-two,
+.content #explain-three,
+.content #explain-four {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px 0;
+    height: 550px;
+}
+
+.content #explain-one,
+.content #explain-three {
+    position: relative;
+}
+
+.content #explain-one .back-left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #046F9E;
+    clip-path: polygon(4% 1%, 100% 0%, 95% 100%, 0% 100%);
+    z-index: -1;
+    transform: rotate(-2deg);
+}
+
+.content #explain-three {
+    position: relative;
+}
+
+.content #explain-three .back-right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #046F9E;
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 4% 99%);
+    z-index: -1;
+    transform: rotate(2deg);
+}
+
+
+
+.content #explain-one .text,
+.content #explain-two .text,
+.content #explain-three .text,
+.content #explain-four .text {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+    background-color: #fff;
+}
+
+.content #explain-one .text p,
+.content #explain-two .text p,
+.content #explain-three .text p,
+.content #explain-four .text p {
+    text-align: justify;
+}
+
+.content #explain-one .text a,
+.content #explain-two .text a,
+.content #explain-three .text a,
+.content #explain-four .text a {
+    color: white;
+    padding: 10px;
+    background-color: #CC9933;
+    border-radius: 30px;
+}
+
+
+
+
+.content #explain-one .image,
+.content #explain-two .image,
+.content #explain-three .image,
+.content #explain-four .image {
+    padding: 20px;
+    width: 40%;
+    height: auto;
+}
+
+
+
+.content #explain-one .image img,
+.content #explain-two .image img,
+.content #explain-three .image img,
+.content #explain-four .image img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .content #explain-one .image,
+    .content #explain-two .image,
+    .content #explain-three .image,
+    .content #explain-four .image {
+        padding: 10px;
+        width: 40%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .content{
+        display: none;
+    }
+    .card .link-mobile {
+        display: block;
+        width: fit-content;
+        margin: 30px auto;
+    }
+}
