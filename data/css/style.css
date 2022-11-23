@@ -6,8 +6,8 @@ CSS général
     --white-color: #ffffff ;
     --main-color : #046F92 ;
     --secondary-color : #CC9933 ;
-    --title-font: ;
-    --paragraphe-font: ;
+    --title-font: Secular One, sans-serif ;
+    --paragraphe-font: roboto, sans-serif ;
 }
 
 body{
@@ -36,6 +36,7 @@ h6{
 }
 p{
     font-family: var(--paragraphe-font);
+    font-weight: 100;
 }
 span{
     font-family: var(--paragraphe-font);
@@ -104,6 +105,19 @@ Card section
     background-color:var(--white-color);
     text-align: center;
     margin: 3em;
+}
+
+.card:hover h2{
+    color: white;
+}
+
+.card:hover p{
+    color: white;
+}
+
+.card:hover {
+    background-color: #6ACDF9;
+    transition-duration: 500ms;
 }
 
 .card .icon {
@@ -176,6 +190,7 @@ explain classes
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    transform: skewY(2deg);
 }
 
 .explain-section-reverse{
@@ -199,9 +214,18 @@ explain classes
     border-width: 1px;
 }
 
+.image {
+    width: 50%;
+}
+
 @media screen and (max-width: 1024px) {
-    #card-section{
-        flex-direction: column;
+
+    .card{
+        margin: 1.5em;
+    }
+
+    .image{
+        scale: 0.7;
     }
 
     #headband-text{
@@ -218,13 +242,12 @@ explain classes
         padding: 1.5em;
     }
 
-    .explain-section .image {
-        width: 70%;
+    .explain-content .image {
         margin-bottom: 2em;
     }
 
     .explain-text{
-        width: 100% ;
+        width: 50% ;
     }
 
     .explain-text input{
@@ -238,14 +261,15 @@ explain classes
 
     .explain-section-reverse{
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: space-around;
         padding: 1.5em;
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
 
     .explain-section-reverse .image {
-        width: 70%;
+        width: 50%;
         margin-bottom: 2em;
     }
 
@@ -295,6 +319,10 @@ explain classes
 
     #headband-text span {
         color: var(--white-color);
+    }
+
+    #card-section{
+        flex-direction: column;
     }
 
     .explain-section{
