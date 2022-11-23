@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Roboto, 'sans-serif';
+}
+
+body {
+    height: 100vh;
+}
+
+footer {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #046F9E;
+}
+
+
+/*********** FOOTER TOP *************/
+
+footer .footer-top {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-top .logo {
+    width: 167px;
+    height: 80px;
+}
+
+footer .footer-top .logo .logo-img {
+    width: 100%;
+    height: 100px;
+}
+
+footer .footer-top .services,
+footer .footer-top .link,
+footer .footer-top .contact {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+footer .footer-top .services,
+footer .footer-top .link {
+    text-align: center;
+}
+
+footer .footer-top .services li,
+footer .footer-top .link li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer .footer-top .services li a,
+footer .footer-top .link li a {
+    color: white;
+}
+
+footer .footer-top .link .container-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    margin-top: 5px;
+}
+
+footer .footer-top .contact p {
+    text-align: center;
+    color: white;
+}
+
+footer .footer-top .contact .contact-item {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+footer .footer-top .contact .contact-item figure {
+    width: 32px;
+    height: 26px;
+}
+
+footer .footer-top .contact .contact-item figure img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .footer-top .contact .contact-item span {
+    color: white;
+}
+
+@media screen and (max-width: 780px) {
+    footer .footer-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px
+    }
+
+    footer .footer-top .services {
+        display: none;
+    }
+    footer .footer-top .link{
+       width: 229px;
+    }
+}
+
+/*************** FOOTER BOTTOM **********/
+
+footer .footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid black;
+    color: white;
+}
