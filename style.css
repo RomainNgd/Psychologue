@@ -1,0 +1,347 @@
+/**
+CSS général
+ */
+
+:root{
+    --white-color: #ffffff ;
+    --main-color : #046F92 ;
+    --secondary-color : #CC9933 ;
+    --title-font: ;
+    --paragraphe-font: ;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: var(--title-font);
+}
+h2{
+    font-family: var(--title-font);
+    font-size:40px;
+}
+h3{
+    font-family: var(--title-font);
+}
+h4{
+    font-family: var(--title-font);
+}
+h5{
+    font-family: var(--title-font);
+}
+h6{
+    font-family: var(--title-font);
+}
+p{
+    font-family: var(--paragraphe-font);
+}
+span{
+    font-family: var(--paragraphe-font);
+}
+
+.contact-button{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+.contact-button-nav{
+    background-color: var(--secondary-color);
+    color: var(--white-color) !important;
+    border-radius: 20px;
+    border: none;
+    padding: 0.3em;
+    font-size: 10px;
+}
+
+/**
+Header bloc accueil
+ */
+
+#header-bloc{
+    width: 70%;
+    margin: 7em auto;
+    display: flex;
+    align-items: center;
+}
+
+#sentences{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#portrait{
+    text-align: center;
+}
+
+.portrait{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/**
+Card section
+ */
+
+#card-section{
+    margin: 3em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    justify-items: center;
+    background-color: var(--main-color);
+}
+
+.card {
+    border: #000000 1px solid;
+    padding: 1em;
+    background-color:var(--white-color);
+    text-align: center;
+    margin: 3em;
+}
+
+.card .icon {
+    width: 30%;
+    margin: 1em auto;
+}
+
+/**
+Headband section
+ */
+
+#headband-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 3em;
+}
+
+#headband-section span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#headband-text{
+    width: 60%;
+    text-align: center;
+    margin: 4em;
+    padding: 4em;
+}
+#headband-text input {
+    margin-top: 2em;
+}
+
+#headband-image {
+    width: 70%;
+}
+
+#headband-image img {
+    width: 80%;
+}
+
+/**
+explain classes
+ */
+
+.background{
+    background-color: #6ACDF9;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    transform: skewY(-5deg);
+}
+
+.explain-section{
+    background-color: var(--main-color);
+    padding: 5em;
+    transform: skewY(-2deg);
+
+}
+
+.explain-content{
+    display: flex;
+    justify-content: space-around;
+    transform: skewY(5deg);
+}
+.explain-text{
+    width: 30%;
+    background-color: var(--white-color);
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.explain-section-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: var(--white-color);
+    padding: 5em;
+}
+.explain-text-reverse{
+    width: 30%;
+    background-color: var(--white-color);
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+    #card-section{
+        flex-direction: column;
+    }
+
+    #headband-text{
+        margin: 2em;
+        padding: 2em;
+    }
+
+    .explain-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--main-color);
+        padding: 1.5em;
+    }
+
+    .explain-section .image {
+        width: 70%;
+        margin-bottom: 2em;
+    }
+
+    .explain-text{
+        width: 100% ;
+    }
+
+    .explain-text input{
+        font-size: 12px;
+        margin-top: 2em;
+    }
+    .explain-text h2{
+        font-size: 30px;
+        margin-bottom: 1em;
+    }
+
+    .explain-section-reverse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1.5em;
+    }
+
+    .explain-section-reverse .image {
+        width: 70%;
+        margin-bottom: 2em;
+    }
+
+    .explain-text-reverse{
+        width: 100% ;
+    }
+
+    .explain-text-reverse input{
+        font-size: 12px;
+        margin-top: 2em;
+    }
+
+    .explain-text-reverse h2{
+        font-size: 30px;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .contact-button-nav{
+        display:block;
+        background-color: #fff;
+        border-radius: 0;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        margin: 0;
+        padding: inherit;
+    }
+    #sentences{
+        display: none;
+    }
+
+    #headband-image {
+        display: none;
+    }
+
+    #headband-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 1em;
+        background-color: var(--main-color);
+        transform: skewY(-3deg);
+    }
+
+    #headband-text span {
+        color: var(--white-color);
+    }
+
+    .explain-section{
+        display: none
+    }
+
+    .explain-text-reverse{
+        display: none;
+    }
+
+    .explain-section-reverse{
+        background-color: var(--main-color);
+        transform: skewY(-2deg);
+        z-index: 1;
+    }
+
+    .explain-section-reverse .image{
+        transform: skewY(3.5deg);
+        margin: 1em;
+        z-index: 10;
+    }
+
+    #card-section{
+        background-color: white;
+    }
+
+    .card{
+        border: none;
+    }
+
+    .background{
+        display: none;
+    }
+
+    .background-reverse {
+        background-color: #6ACDF9;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        transform: skewY(-4deg);
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+
