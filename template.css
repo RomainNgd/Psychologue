@@ -8,6 +8,7 @@
 
 body {
     height: 100vh;
+    font-family: Roboto, 'sans-serif';
 }
 
 /******** CARD SECTION **********/
@@ -17,6 +18,7 @@ body {
 .card h1 {
     text-align: center;
     margin: 20px 0 40px;
+    font-family: Secular One, 'sans-serif';
 }
 
 .card #card-section {
@@ -151,9 +153,12 @@ body {
     background-color: #CC9933;
     border-radius: 30px;
 }
-
-
-
+.content #explain-one .text a:hover,
+.content #explain-two .text a:hover,
+.content #explain-three .text a:hover,
+.content #explain-four .text a:hover {
+    background-color: #b18733;
+}
 
 .content #explain-one .image,
 .content #explain-two .image,
@@ -163,7 +168,6 @@ body {
     width: 40%;
     height: auto;
 }
-
 
 
 .content #explain-one .image img,
