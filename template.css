@@ -11,7 +11,9 @@ body {
 }
 
 /******** CARD SECTION **********/
-
+.card{
+    margin-bottom: 150px;
+}
 .card h1 {
     text-align: center;
     margin: 20px 0 40px;
@@ -22,7 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px
+    gap: 30px;
 }
 
 .card #card-section #card-one,
@@ -84,7 +86,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 150px 0;
+    margin: 75px 0;
     height: 550px;
 }
 
@@ -100,7 +102,7 @@ body {
     background-color: #046F9E;
     clip-path: polygon(4% 1%, 100% 0%, 95% 100%, 0% 100%);
     z-index: -1;
-    transform: rotate(-2deg);
+    transform: rotate(-3deg);
 }
 
 .content #explain-three {
