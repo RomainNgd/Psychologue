@@ -14,6 +14,10 @@
     --paragraphe-font: roboto, sans-serif ;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     font-family: Roboto, 'sans-serif';
@@ -89,6 +93,7 @@ span{
     border-radius: 10px;
     background: #046F9E;
     color: white;
+    cursor: pointer;
 }
 
 .card #card-section #card-one:hover,
