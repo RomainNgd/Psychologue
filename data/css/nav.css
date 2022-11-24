@@ -20,8 +20,9 @@ figure{
 }
 
 figure img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    vertical-align: middle;
 }
 
 .contact-button-nav{
@@ -59,7 +60,7 @@ nav{
     display:inline-block;
     line-height: 50px;
     margin:0 10px; 
-    font-size:18px;
+    font-size:15px;
 }
 
 .nav-item.active{
@@ -68,7 +69,7 @@ nav{
 
 .nav-item a{ 
     color:black;
-    font-size: 1.5rem;
+    font-size: 16px;
 }
 
 .btn-toggle{ 

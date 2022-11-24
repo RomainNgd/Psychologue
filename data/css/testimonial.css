@@ -1,13 +1,13 @@
 #testimonial-section{
     text-align: center;
-    width: 800px;
+    width: 600px;
     margin: 3em auto;
     position: relative;
     overflow: hidden;
 }
 #carrousel-container{
     display: inline-flex;
-    width: 800px;
+    width: 600px;
 }
 
 .chevron {
@@ -38,7 +38,7 @@
 .testimonial{
     text-align: center;
     margin: 2em auto;
-    width: 800px;
+    width: 600px;
 }
 
 .testimonial img {
@@ -53,7 +53,20 @@
     border-style: solid;
     border-color: black;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+
+    #testimonial-section{
+        text-align: center;
+        width: 300px;
+        margin: 3em auto;
+        position: relative;
+        overflow: hidden;
+    }
+    #carrousel-container{
+        display: inline-flex;
+        width: 300px;
+    }
+
     .testimonial img {
         width: 150px;
     }
@@ -68,7 +81,8 @@
 
     .testimonial{
         text-align: center;
-        margin: 1em auto;
-        width: 80%;
+        margin: 0 0 0 0 ;
+        width: 300px;
     }
 }
+
