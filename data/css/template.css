@@ -222,6 +222,17 @@ span{
     background-color: #CC9933;
     border-radius: 30px;
 }
+
+.content #explain-one .text a:hover,
+.content #explain-two .text a:hover,
+.content #explain-three .text a:hover,
+.content #explain-four .text a:hover {
+    color: white;
+    padding: 10px;
+    background-color: #CC9933;
+    border-radius: 30px;
+    scale: 1.2;
+}
 .content #explain-one .text a:hover,
 .content #explain-two .text a:hover,
 .content #explain-three .text a:hover,

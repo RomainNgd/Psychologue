@@ -51,6 +51,10 @@ span{
     font-size: 16px;
 }
 
+.contact-button:hover{
+    scale: 1.2;
+}
+
 /**
 Header bloc accueil
  */
