@@ -6,20 +6,63 @@
     text-decoration: none;
 }
 
+:root{
+    --white-color: #ffffff ;
+    --main-color : #046F92 ;
+    --secondary-color : #CC9933 ;
+    --title-font: Secular One, sans-serif ;
+    --paragraphe-font: roboto, sans-serif ;
+}
+
 body {
     height: 100vh;
     font-family: Roboto, 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: var(--title-font);
+}
+h2{
+    font-family: var(--title-font);
+    font-size:40px;
+}
+h3{
+    font-family: var(--title-font);
+}
+h4{
+    font-family: var(--title-font);
+}
+h5{
+    font-family: var(--title-font);
+}
+h6{
+    font-family: var(--title-font);
+}
+p{
+    font-family: var(--paragraphe-font);
+    font-weight: 100;
+}
+span{
+    font-family: var(--paragraphe-font);
 }
 
 /******** CARD SECTION **********/
 .card{
     margin-bottom: 150px;
-    margin
+    padding-top: 5em;
 }
 .card h1 {
     text-align: center;
     margin: 20px 0 40px;
     font-family: Secular One, 'sans-serif';
+}
+
+.card-title{
+    font-size: 30px ;
+    text-align: center;
+    padding: 0 1em;
 }
 
 .card #card-section {
