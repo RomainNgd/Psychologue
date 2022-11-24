@@ -1,15 +1,22 @@
-$(function() {
-    $('.owl-carousel.testimonial-carousel').owlCarousel({
-        nav: true,
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-        dots: false,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            750: {
-                items: 2,
-            }
-        }
-    });
-});
+let nbr = 5;
+let p=0;
+let container = document.getElementById("carrousel-container");
+let droite = document.getElementById("d");
+let gauche = document.getElementById("g");
+
+container.style.width = (800*nbr) + "px";
+
+gauche.onclick=function (){
+    if (p>-nbr+1)
+        p--;
+    container.style.transform="translate(" +p*800+"px)"
+    container.style.transition="all 0.5s ease"
+}
+
+
+droite.onclick=function (){
+    if (p<0)
+        p++;
+    container.style.transform="translate(" +p*800+"px)"
+    container.style.transition="all 0.5s ease"
+}
