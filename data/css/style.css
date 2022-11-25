@@ -53,6 +53,7 @@ span{
 
 .contact-button:hover{
     scale: 1.2;
+    transition: scale 0.3s;
 }
 
 /**
@@ -126,7 +127,7 @@ Card section
 
 .card:hover {
     background-color: #6ACDF9;
-    transition-duration: 500ms;
+    transition: background-color 0.2s;
 }
 
 .card .icon {

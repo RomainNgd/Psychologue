@@ -30,20 +30,14 @@ footer .footer-top {
 }
 
 footer .footer-top .logo {
-    width: 167px;
+    width: 200px;
     height: 80px;
 }
 
 footer .footer-top .logo .logo-img {
     width: 100%;
     height: 100px;
-}
-
-footer .footer-top .services,
-footer .footer-top .link,
-footer .footer-top .contact {
-    padding: 10px;
-    border: 1px solid white;
+    object-fit: cover;
 }
 
 footer .footer-top .services,
